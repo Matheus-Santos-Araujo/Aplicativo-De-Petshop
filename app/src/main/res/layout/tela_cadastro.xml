@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    tools:context="com.company.ox.petshop.Tela_Cadastro">
+
+    <TextView
+        android:id="@+id/TVnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_TB_cadastro"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="75dp"
+        android:layout_toStartOf="@+id/BTenvia_cadastro"
+        android:text="Nome:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+<TextView
+    android:id="@+id/TVidade"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/TVnome"
+    android:layout_below="@+id/TVnome"
+    android:layout_marginTop="45dp"
+    android:text="Idade:"
+    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:id="@+id/TVdados_dono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TVnome"
+        android:layout_below="@+id/toolbar_TB_cadastro"
+        android:layout_marginTop="19dp"
+        android:text="Dados do Dono:"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Dono de Canino" />
+
+<CheckBox
+    android:id="@+id/checkBox2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/checkBox1"
+    android:layout_below="@+id/checkBox1"
+    android:layout_marginTop="14dp"
+    android:text="Dono de Felino" />
+
+<CheckBox
+    android:id="@+id/checkBox3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/checkBox2"
+    android:layout_below="@+id/checkBox2"
+    android:layout_marginTop="16dp"
+    android:text="Outro" />
+
+    <EditText
+        android:id="@+id/ETnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TVnome"
+        android:layout_toEndOf="@+id/checkBox3"
+        android:ems="10"
+        android:foregroundTint="@color/colorPrimary"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="Digite seu nome" />
+
+<EditText
+    android:id="@+id/ETidade"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/ETnome"
+    android:layout_alignTop="@+id/TVidade"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Digite sua idade" />
+
+    <Button
+        android:id="@+id/BTenvia_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cadastropet_FBTtelaCadastro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/rounded"
+        android:text="Enviar"
+        android:textColor="@color/branco" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_TB_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/branco"
+        app:subtitleTextColor="@color/branco"
+        app:subtitle="Entre com os dados para Cadastro"
+        app:title="Petshop BIG CARE" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cadastropet_FBTtelaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/ETidade"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/bone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox3"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Cadastre seu Pet aqui ->"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/bloggif_5a087f0389b96" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        app:srcCompat="@drawable/bloggif_5a087f1d5d1a9" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_toStartOf="@+id/checkBox3"
+        app:srcCompat="@drawable/bloggif_5a087fccc9d16" />
+</RelativeLayout>

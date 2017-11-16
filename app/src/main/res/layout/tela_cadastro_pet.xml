@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    tools:context="com.company.ox.petshop.Tela_Cadastro_Pet">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/cadastropetTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/branco"
+        app:subtitleTextColor="@color/branco"
+        app:subtitle="Entre com os dados do seu Pet"
+        app:title="Petshop BIG CARE" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="43dp"
+        android:text="Nome : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText3"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="52dp"
+        android:text="Idade : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="60dp"
+        android:layout_toStartOf="@+id/editText4"
+        android:text="Peso : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_below="@+id/cadastropetTB"
+        android:layout_marginTop="11dp"
+        android:fontFamily="monospace"
+        android:text="Ficha de Cadastro Pet"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite o Nome do Pet" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/editText3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite a Idade do Pet"
+        android:textColorLink="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite o Peso do Pet"
+        android:textColorLink="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="48dp"
+        android:layout_toStartOf="@+id/editText6"
+        android:text="Raça : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite a Raça do Pet"
+        android:textColorLink="@color/colorPrimary" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/editText7"
+        android:layout_below="@+id/editText7"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded"
+        android:soundEffectsEnabled="true"
+        android:text=" Deslize para completar"
+        android:textColor="@color/branco"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

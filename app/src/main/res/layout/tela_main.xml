@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.company.ox.petshop.Tela_Main"
+    >
+
+    <Button
+        android:id="@+id/BTentrar1"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:layout_above="@+id/BTcadastro1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded"
+        android:text="Entrar"
+        android:textColor="@color/branco" />
+
+    <Button
+        android:id="@+id/BTcadastro1"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:layout_above="@+id/BTdeescricao"
+        android:layout_alignStart="@+id/BTentrar1"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded"
+        android:text="Cadastre-se"
+        android:textColor="@color/branco" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:subtitle="Participe de Nossa Promoção!"
+        app:title="Petshop BIG CARE "
+        app:titleTextColor="@color/branco"
+        app:subtitleTextColor="@color/branco"/>
+
+    <Button
+        android:id="@+id/BTdeescricao"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/BTcadastro1"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded"
+        android:text="Sobre a Empresa"
+        android:textColor="@color/branco" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toolbar3"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/backimage" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/BTcadastro1"
+        android:layout_toStartOf="@+id/BTentrar1"
+        app:srcCompat="@drawable/q" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_above="@+id/BTdeescricao"
+        android:layout_toStartOf="@+id/BTcadastro1"
+        app:srcCompat="@drawable/passaros02" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/BTentrar1"
+        app:srcCompat="@drawable/ascat" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/BTcadastro1"
+        android:layout_toEndOf="@+id/BTdeescricao"
+        app:srcCompat="@drawable/large" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignStart="@+id/imageView11"
+        android:layout_below="@+id/BTcadastro1"
+        app:srcCompat="@drawable/asdog" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView13"
+        android:layout_toEndOf="@+id/BTcadastro1"
+        app:srcCompat="@drawable/r" />
+
+
+</RelativeLayout>
